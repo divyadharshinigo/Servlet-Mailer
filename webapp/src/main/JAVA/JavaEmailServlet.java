@@ -57,8 +57,8 @@ public class JavaEmailServlet extends HttpServlet {
     public void sendEmail() throws AddressException, MessagingException {
         try {
             String emailHost = "smtp.zoho.com";
-            String fromUser = "nagasai.g9@zoho.com";
-            String fromUserEmailPassword = "Porsche.G9";
+            String fromUser = "--------------------"; //sender mail ID
+            String fromUserEmailPassword = "-----------------"; //sender password
 
             transport = mailSession.getTransport("smtp");
 
